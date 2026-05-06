@@ -1,28 +1,13 @@
-# Checkpoint 1 Summary
+## FD001 Dataset Exploration
 
-## Project Title
-Deep Learning for Predictive Maintenance in IIoT Automation
+Pada tahap awal, tim menggunakan subset FD001 dari NASA C-MAPSS dataset. Dataset ini terdiri dari data training, data testing, dan file RUL aktual untuk data testing.
 
-## Team
-Team B
+Aktivitas yang telah dilakukan:
+1. Membaca file train_FD001.txt, test_FD001.txt, dan RUL_FD001.txt.
+2. Memberikan nama kolom pada dataset, yaitu unit number, time cycle, operational settings, dan 21 sensor measurements.
+3. Mengecek ukuran dataset dan jumlah unit mesin.
+4. Mengecek missing values.
+5. Menghitung label Remaining Useful Life (RUL) pada data training.
+6. Membuat visualisasi awal tren RUL dan sensor untuk salah satu mesin.
 
-## Dataset
-NASA C-MAPSS Dataset  
-https://www.kaggle.com/datasets/behrad3d/nasa-cmaps
-
-## Project Objective
-The objective of this project is to develop a predictive maintenance model that can estimate the Remaining Useful Life (RUL) of turbofan engines using multivariate sensor time-series data.
-
-## Activities Completed
-1. Created the GitHub repository.
-2. Added initial project documentation.
-3. Identified the dataset source.
-4. Prepared the initial project folder structure.
-5. Planned the preprocessing and modeling workflow.
-
-## Next Steps
-1. Download and inspect the NASA C-MAPSS dataset.
-2. Perform exploratory data analysis.
-3. Calculate RUL labels for training data.
-4. Build a baseline model.
-5. Develop a deep learning model for RUL prediction.
+Hasil awal menunjukkan bahwa dataset dapat digunakan untuk membangun model prediksi Remaining Useful Life berbasis data sensor time-series.
