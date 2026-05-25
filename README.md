@@ -19,3 +19,29 @@ Industrial IoT (IIoT) & Predictive Maintenance
 4. Build baseline models.
 5. Develop deep learning models for RUL prediction.
 6. Evaluate model performance using MAE/RMSE.
+
+## Current Progress
+
+- Dataset Exploration ✅
+- RUL Labeling ✅
+- Preprocessing Pipeline ✅
+- Signal Denoising ✅
+- Sequence Generation ✅
+- Baseline 1D-CNN Model ✅
+- CNN-LSTM Hybrid ⏳
+- Transformer Model ⏳
+
+## Baseline Model Performance
+
+| Model | RMSE | MAE |
+|---|---|---|
+| 1D-CNN | 14.46 | 11.00 |
+
+## Repository Structure
+
+```text
+data/
+docs/
+notebooks/
+results/
+src/
