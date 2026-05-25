@@ -45,3 +45,11 @@ docs/
 notebooks/
 results/
 src/
+
+
+## Baseline Model Performance
+
+| Model | RMSE | MAE |
+|---|---|---|
+| 1D-CNN | 14.46 | 11.00 |
+| CNN-LSTM | 13.24 | 9.68 |
