@@ -45,8 +45,7 @@ docs/
 notebooks/
 results/
 src/
-
-
+````
 ## Baseline Model Performance
 
 | Model | RMSE | MAE |
