@@ -1,14 +1,14 @@
 # Checkpoint 4 Summary
 
-## Activities
+## Aktivitas yang Dilakukan
 
-* Implemented a Transformer-based model using Multi-Head Self-Attention for Remaining Useful Life (RUL) prediction.
-* Reused the preprocessing pipeline developed in previous checkpoints, including normalization, denoising, and sequence generation.
-* Trained the Transformer model on the NASA C-MAPSS FD001 dataset.
-* Evaluated model performance using RMSE and MAE metrics.
-* Compared Transformer performance with the baseline 1D-CNN and CNN-LSTM models.
+* Mengimplementasikan model Transformer berbasis Multi-Head Self-Attention untuk prediksi Remaining Useful Life (RUL).
+* Menggunakan pipeline preprocessing yang telah dikembangkan pada checkpoint sebelumnya, meliputi normalisasi data, denoising sinyal, dan pembentukan sequence time-series.
+* Melatih model Transformer menggunakan dataset NASA C-MAPSS FD001.
+* Melakukan evaluasi performa model menggunakan metrik RMSE dan MAE.
+* Membandingkan performa model Transformer dengan model baseline 1D-CNN dan CNN-LSTM.
 
-## Model Performance
+## Hasil Performa Model
 
 | Model       | RMSE  | MAE   |
 | ----------- | ----- | ----- |
@@ -16,23 +16,26 @@
 | CNN-LSTM    | 13.24 | 9.68  |
 | Transformer | 16.54 | 12.10 |
 
-## Findings
+## Temuan dan Analisis
 
-The CNN-LSTM model achieved the best performance among all evaluated architectures. Although the Transformer model successfully captured temporal dependencies through the self-attention mechanism, its performance was lower than CNN-LSTM on the NASA C-MAPSS FD001 dataset.
+Hasil eksperimen menunjukkan bahwa model CNN-LSTM memberikan performa terbaik dibandingkan model 1D-CNN dan Transformer pada dataset NASA C-MAPSS FD001. Meskipun Transformer berhasil memanfaatkan mekanisme Self-Attention untuk mempelajari hubungan antar time-step pada data sensor, performanya masih berada di bawah CNN-LSTM pada konfigurasi dan dataset yang digunakan.
 
-## Supporting Results
+Peningkatan performa dari 1D-CNN ke CNN-LSTM menunjukkan bahwa penambahan komponen LSTM mampu menangkap pola degradasi mesin secara temporal dengan lebih baik. Oleh karena itu, CNN-LSTM dipilih sebagai model terbaik pada tahap penelitian saat ini.
 
-* Transformer training loss visualization
-* Transformer prediction visualization
-* Saved Transformer model (`transformer_model.keras`)
-* Experimental metrics stored in `transformer_results.txt`
+## Bukti Pendukung
 
-## Current Progress
+* Grafik Training Loss Transformer
+* Grafik Prediksi RUL Transformer
+* Model Transformer yang telah disimpan (`transformer_model.keras`)
+* Hasil evaluasi Transformer (`transformer_results.txt`)
+* Tabel perbandingan performa seluruh model
 
-The project has successfully implemented and evaluated three deep learning architectures for Remaining Useful Life (RUL) prediction:
+## Progress Saat Ini
+
+Proyek telah berhasil mengimplementasikan dan mengevaluasi tiga arsitektur deep learning untuk prediksi Remaining Useful Life (RUL), yaitu:
 
 1. Baseline 1D-CNN
 2. CNN-LSTM Hybrid
-3. Transformer with Self-Attention
+3. Transformer berbasis Self-Attention
 
-Based on the current experiments, CNN-LSTM is the best-performing model and will be considered the primary candidate for further optimization and final deployment.
+Berdasarkan hasil eksperimen yang diperoleh, CNN-LSTM menjadi model dengan performa terbaik dan akan digunakan sebagai dasar untuk tahap optimasi lebih lanjut pada pengembangan sistem predictive maintenance.
