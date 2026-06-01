@@ -28,8 +28,10 @@ Industrial IoT (IIoT) & Predictive Maintenance
 - Signal Denoising ✅
 - Sequence Generation ✅
 - Baseline 1D-CNN Model ✅
-- CNN-LSTM Hybrid ⏳
-- Transformer Model ⏳
+- CNN-LSTM Hybrid ✅
+- Transformer Model ✅
+- Model Comparison Analysis ✅
+- Final Report Documentation ✅
 
 ## Baseline Model Performance
 
