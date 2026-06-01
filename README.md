@@ -33,11 +33,17 @@ Industrial IoT (IIoT) & Predictive Maintenance
 - Model Comparison Analysis ✅
 - Final Report Documentation ✅
 
-## Baseline Model Performance
+## Experimental Results
 
 | Model | RMSE | MAE |
-|---|---|---|
+|---------|---------|---------|
 | 1D-CNN | 14.46 | 11.00 |
+| CNN-LSTM | 13.24 | 9.68 |
+| Transformer | 16.54 | 12.10 |
+
+## Best Model
+
+CNN-LSTM achieved the best performance and was selected as the final predictive maintenance model.
 
 ## Repository Structure
 
