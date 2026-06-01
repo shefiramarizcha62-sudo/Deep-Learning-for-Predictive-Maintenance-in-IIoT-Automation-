@@ -11,7 +11,7 @@
 | Model | RMSE | MAE |
 |---|---|---|
 | 1D-CNN | 14.46 | 11.00 |
-| CNN-LSTM | xx.xx | xx.xx |
+| CNN-LSTM | 13.24 | 9.68 |
 
 ## Supporting Results
 - CNN-LSTM training loss visualization
