@@ -46,6 +46,24 @@ Three architectures were implemented and compared:
 """)
 
 # ==================================
+# DATASET INFORMATION
+# ==================================
+
+st.header("📂 Dataset Information")
+
+st.write("""
+Dataset : NASA C-MAPSS FD001
+
+Number of Engine Units : 100
+
+Sensor Features : 21
+
+Data Type : Multivariate Time-Series
+
+Target Variable : Remaining Useful Life (RUL)
+""")
+
+# ==================================
 # MODEL COMPARISON
 # ==================================
 
@@ -71,6 +89,32 @@ comparison = pd.DataFrame({
 
 st.dataframe(
     comparison,
+    use_container_width=True
+)
+
+# ==================================
+# MODEL ARCHITECTURES
+# ==================================
+
+st.header("🧠 Model Architectures")
+
+architecture = pd.DataFrame({
+
+    "Model": [
+        "1D-CNN",
+        "CNN-LSTM",
+        "Transformer"
+    ],
+
+    "Architecture": [
+        "Conv1D + Dense",
+        "Conv1D + LSTM + Dense",
+        "Multi-Head Attention + Dense"
+    ]
+})
+
+st.dataframe(
+    architecture,
     use_container_width=True
 )
 
@@ -169,6 +213,16 @@ The Conv1D layers effectively extracted local degradation patterns while the LST
 
 Therefore, CNN-LSTM was selected as the final predictive maintenance model.
 """)
+
+# ==================================
+# REPOSITORY
+# ==================================
+
+st.header("🔗 Repository")
+
+st.markdown(
+    "[GitHub Repository](https://github.com/shefiramarizcha62-sudo/Deep-Learning-for-Predictive-Maintenance-in-IIoT-Automation-)"
+)
 
 # ==================================
 # FOOTER
